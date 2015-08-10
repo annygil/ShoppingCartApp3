@@ -11,7 +11,7 @@ package com.mycompany.shoppingcartapp3;
  */
 public class Product {
     
-    	private String productName;
+	private String productName;
 	private int quantity;
 	private double totalPrice;
  
