@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.mycompany.shoppingcartapp3.ShoppingCartAppTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.189 sec <<< FAILURE!
-testAddSingleProductToShoppingCart(com.mycompany.shoppingcartapp3.ShoppingCartAppTest)  Time elapsed: 0.018 sec  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.167 sec <<< FAILURE!
+testAddSingleProductToShoppingCart(com.mycompany.shoppingcartapp3.ShoppingCartAppTest)  Time elapsed: 0.035 sec  <<< FAILURE!
 java.lang.AssertionError: Use assertEquals(expected, actual, delta) to compare floating-point numbers
 	at org.junit.Assert.fail(Assert.java:93)
 	at org.junit.Assert.assertEquals(Assert.java:493)
