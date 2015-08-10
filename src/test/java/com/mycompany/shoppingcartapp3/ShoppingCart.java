@@ -14,5 +14,9 @@ public class ShoppingCart {
 	public int getProductCount() {
 		return 0;
 	}
+ 
+	public void addProduct(Product product) {
+		
+	}
     
 }
