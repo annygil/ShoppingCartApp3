@@ -7,7 +7,8 @@ package com.mycompany.shoppingcartapp3;
 
 /**
  *
- * @author Anny Gil -ubitica-01
+ * @author Anny Gil -ubitica-01 okase
+ * 
  */
 public class BuyXItemGetYItemFreeOffer implements IOffer {
  
