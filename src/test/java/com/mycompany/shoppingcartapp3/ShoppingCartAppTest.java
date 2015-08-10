@@ -25,7 +25,19 @@ public class ShoppingCartAppTest {
 		Product product = new Product("Gatsby hair cream", 1, 30.0);
 		cart.addProduct(product);
 		Assert.assertEquals(1, cart.getProductCount());
-                Assert.assertEquals(30.0,cart.getTotalCartValue());
+                Assert.assertEquals(30.0,cart.getTotalCartValue(),0.0);
 	}
-    
+        	
+	@Test
+	public void addDifferentProductsToTheCart(){
+		ShoppingCart cart = new ShoppingCart();
+		Product gatsByCream = new Product("Gatsby hair cream", 1, 30.0);
+		Product bvlgiriSoap = new Product("Bvlgiri Soap", 1, 100.0);
+		cart.addProduct(gatsByCream);
+		cart.addProduct(bvlgiriSoap);
+		Assert.assertEquals(2, cart.getProductCount());
+		Assert.assertEquals(130.0, cart.getTotalCartValue(),0.0);
+	}
 }
+    
+
