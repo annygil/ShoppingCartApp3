@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Arrays;
 /**
  *
- * @author ubitica-01
+ * @author ubitica-01 Anny gil
  */
 public class ShoppingCart {
 
