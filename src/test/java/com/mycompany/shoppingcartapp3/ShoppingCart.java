@@ -16,21 +16,41 @@ public class ShoppingCart {
  
 	private List<Product> productList = new ArrayList();
 	private double totalCartValue;
+        private IOffer offer;
         
-	public int getProductCount() {
-		return productList.size();
-	}
-	public void addProduct(Product product) {
-		productList.add(product);
-	}
+	 public   int   getProductCount ( )   { 
+		 return   productList . size ( ) ; 
+	 } 
+         
+          public   Product  getProductByName ( String   name )   { 
+		 if   ( productList . size ( )   >   0 )   { 
+			 for   ( Product  product   :   productList )   { 
+				 if   ( product . getProductName ( ) . equals ( name ) )   { 
+					 return   product ; 
+				 } 
+			 } 
+		 } 
+		 return   null ; 
+	 } 
  
-	public double getTotalCartValue() {
-		if (productList.size() > 0) {
-			for (Product product : productList) {
-				totalCartValue = totalCartValue + product.getTotalPrice();
-			}
-		}
-		return totalCartValue;
-	}
-    
-}
+	 public   void   addProduct ( Product  product )   { 
+		if ( offer   !=   null ) { 
+			 offer . applyOffer ( product ) ; //apply offer 
+		 } 
+		 productList . add ( product ) ; 
+	 
+	 } 
+ 
+	 public   double   getTotalCartValue ( )   { 
+		 if   ( productList . size ( )   >   0 )   { 
+			 for   ( Product  product   :   productList )   { 
+				 totalCartValue   =   totalCartValue   +   product . getTotalPrice ( ) ; 
+			 } 
+		 } 
+		 return   totalCartValue ; 
+	 } 
+ 
+	 public   void   setOffer ( IOffer  offer )   { 
+		 this.offer   =   offer ; 
+	 } 
+ } 
