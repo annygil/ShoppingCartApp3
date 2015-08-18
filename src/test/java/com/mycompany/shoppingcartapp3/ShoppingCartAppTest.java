@@ -83,7 +83,7 @@ public class ShoppingCartAppTest {
 		 Product  gatsByCream   =   new   Product ( "Gatsby hair cream" ,   2 ,   60.0 ) ; 
 		 cart . addProduct ( gatsByCream   ) ; 
 		 Assert . assertEquals ( 1 ,   cart . getProductCount ( ) ) ; 
-		 Assert . assertEquals ( 60.0 ,   cart . getProductByName ( "Gatsby hair cream" ) . getTotalPrice ( ) , 0.0 ) ; 
+		 Assert . assertEquals ( 45.0 ,   cart . getProductByName ( "Gatsby hair cream" ) . getTotalPrice ( ) , 0.0 ) ; 
 		 Assert . assertEquals ( 45.0 ,   cart . getTotalCartValue ( ) , 0.0 ) ; 
 	 } 
  } 
