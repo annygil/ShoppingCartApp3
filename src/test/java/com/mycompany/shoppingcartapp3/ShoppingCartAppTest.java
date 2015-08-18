@@ -73,7 +73,7 @@ public class ShoppingCartAppTest {
 		 Assert . assertEquals ( 120.0 ,   cart . getProductByName ( "Gatsby hair cream" ) .getTotalPrice() , 0.0 ) ; 
 		 Assert . assertEquals ( 120.0 ,   cart . getTotalCartValue ( ) , 0.0 ) ; 
 	 }
-
+////asdfghjklñ
 	
     @Test 
 	 public   void   testApplyBuyOneGetFiftyPercentDiscountOnNextOfferToTheCart ( ) { 
